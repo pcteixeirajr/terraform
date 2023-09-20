@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: "vrs-propostas-empresas-db-tf"
+  description: "banco de dados aurora postgres micro serviço proposta empresa "
+  annotations:
+    dev.azure.com/project: vinci-retirement-services
+    dev.azure.com/project-slug: vinci-retirement-services/vrs-propostas-empresas-db-tf
+    dev.azure.com/project-repo: vinci-retirement-services/vrs-propostas-empresas-db-tf
+    dev.azure.com/build-definition: vrs-propostas-empresas-db-tf
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: aws:iasc
+  lifecycle: experimental
+  owner: "Squad PJ"
+  system: "vinci-prev.pj"
+  #subcomponentOf: spotify-ios-app
+  #dependsOn:
+  #- resource:default/artists-db
+  #providesApis:
+  #- "vrs-propostas-empresas-db-tf"
+  #consumesApis:
+  #- account-api
+
